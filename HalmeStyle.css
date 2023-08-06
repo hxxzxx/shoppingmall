@@ -78,3 +78,13 @@ footer {
 .signupDoneWrapper button {
     margin-bottom: 30px;
 }
+
+
+/*cart 페이지*/
+
+.cartContainer {
+    display: flex;
+    justify-content:center;
+    height: 400px;
+}
+
