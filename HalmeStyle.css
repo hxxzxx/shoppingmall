@@ -82,3 +82,19 @@ footer {
 }
 
 
+/* cart 페이지 */
+.product {
+    display: flex; 
+    justify-content: center; 
+    align-items: top; 
+    margin: 1cm; 
+    margin-top: 80px;
+}
+
+/* orderlist 페이지 */
+.orderSelected {
+    display:inline-block; 
+    border-bottom: 2px solid black ; 
+    width:200px; text-align: center; 
+    font-size: 25px;
+}
