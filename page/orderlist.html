@@ -19,11 +19,11 @@
         <div class="selected">주문내역 보기</div>
     </div>
  
-    <form action>
+    <form action="/orderList" method="get">
         <div style="display: flex; justify-content: center; margin: 1cm; margin-top: 80px;">
             <img src="../logo.png" alt="상품 이미지" style="border: 1px solid black;">
             <span style="margin: 1cm; font-size: 30px; font-weight: bold;">
-                <p>상품명~~~~~~~~~~~~~~~~~~~~~~</p>
+                <p id="productName">상품명~~~~~~~~~~~~~~~~~~~~~~</p>
                 <p style="float:left;">19,900원</p> <br>
             </span>
             <p style="font-size: 60px; margin: 1cm;">1개</p>
@@ -37,11 +37,11 @@
             <span style="font-size: 40px;">19,900원</span>
         </div>
 
-        <span  class="orderSelected">입금대기</span>
+        <!-- <span  class="orderSelected">입금대기</span>
         <span class="orderSelected">입금대기</span>
         <span class="orderSelected">입금대기</span>
         <span class="orderSelected">입금대기</span>
-        <span class="orderSelected">입금대기</span>
+        <span class="orderSelected">입금대기</span> -->
 
 
         <!-- <div style="display: flex; justify-content: space-around; align-items: stretch; margin:3cm; font-size: 25px; border-bottom: 1px solid rgb(160, 160, 160); padding-bottom: 30px; ">
@@ -53,10 +53,10 @@
         </div> -->
     
         <div class="d-grid d-md-block" style="text-align: center;">
-            <button type="button" class="btn btn-dark" style="font-size: 20px; margin-right: 100px; " onclick="alert('주문을 취소하겠습니까?')"> 주문 취소</button>
-            <button type="button" class="btn btn-dark" style="font-size: 20px;" onclick="location.href='Main.html'"> 쇼핑 계속하기</button> 
+            <button type="submit" class="btn btn-dark" style="font-size: 20px; margin-right: 100px; " onclick="alert('주문을 취소하겠습니까?')"> 주문 취소</button>
+            <button type="submit" class="btn btn-dark" style="font-size: 20px;" onclick="location.href='Main.html'"> 쇼핑 계속하기</button> 
         </div>  
-</form>
+    </form>
     <footer>
         <p>Copyright © 2023 HALME All rights reserved.</p>
     </footer>
