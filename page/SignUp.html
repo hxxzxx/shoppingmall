@@ -18,7 +18,7 @@
         <div class="unselected"><a href="./login.html">로그인</a></div>
     </div>    
 
-    <form class="signupWrapper">
+    <form class="signupWrapper" method="POST" action="/signUp">
         <div class="signupContent">
              <div>이름</div><input name="name"placeholder="홍길동" required>
         </div>
@@ -28,7 +28,7 @@
         <div class="signupContent">
             <div>주소</div><input name="address" placeholder="인천광역시 연수구 송도동 12-1" required>
         </div>
-            <button  class="btn btn-dark" type="submit" onclick="alert('입력한 정보로 회원가입을 하시겠습니까?')">회원가입 </button>
+            <button  class="btn btn-outline-dark" type="submit" onclick="alert('입력한 정보로 회원가입을 하시겠습니까?')"> 입력한 정보로 회원가입 </button>
         </div>
     </form>
     <footer>

@@ -31,7 +31,7 @@
             </div>
         
             <div  style="display: flex; justify-content: center; margin-top:90px;">
-                <button type="button" class="btn btn-outline-dark" style="font-size: 30px; margin-right: 50px;" > 배송지 변경</button>
+                <button type="button" class="btn btn-outline-dark" style="font-size: 30px; margin-right: 50px;" onclick="onHandleClick( )"> 배송지 변경</button>
                 <form action="payDone.html" method="get">
                     <button type="submit" class="btn btn-outline-dark" style="font-size: 30px;"> 구매하기</button> 
                 </form> 
@@ -48,6 +48,12 @@
     </footer>
 
     <script>
+        const address = document.getElementById("address");
+        function onHandleClick()
+        {   
+            let newAddress = prompt('새로운 주소를 입력해주세요',address.innerText);
+            address.innerText=newAddress;
+        }
 
     </script>
     
