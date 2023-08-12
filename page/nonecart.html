@@ -14,18 +14,19 @@
     </header>
 
     <div class="orderWrapper">
-        <div class="selected"> <a href="cart.html">장바구니</a></div>
+        <div class="selected"> <a href="nonecart.html">장바구니</a></div>
         <div class="unselected">주문결제 - 배송지</div>
         <div class="unselected">주문결제 - 완료</div>
         <div class="unselected">주문내역 보기</div>
     </div>
 
-    <form action="/cart" method="get">
-        <div style="display: flex; justify-content: center; margin: 1cm; margin-top: 300px; font-size: 30px; ">
-        담겨진 상품이 없습니다.
+    <form action="Main.html" method="get">
+        <div id="product" style="display: flex; justify-content: center; margin: 1cm; margin-top: 200px; font-size: 40px; ">
+                 담겨진 상품이 없습니다.
         </div>
+
         <div class="d-grid gap-2 col-2 mx-auto" >
-            <button type="submit" class="btn btn-dark" style="font-size: 20px; margin-top: 260px;" onClick="location.href='Main.html'"> 메인으로 가기</button> 
+            <button type="submit" class="btn btn-outline-dark" style="font-size: 30px; margin-top: 150px;"> 메인으로 가기</button> 
         </div> 
     </form>
 

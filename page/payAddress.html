@@ -13,28 +13,31 @@
         <img src="../logo.png">
     </header>
     <div class="orderWrapper">
-        <div class="unselected"> <a href="cart.html">장바구니</a></div>
-        <div class="selected">주문결제 - 배송지</div>
+        <div class="unselected"> <a href="nonecart.html">장바구니</a></div>
+        <div class="selected"> <a href="payAddress.html">주문결제 - 배송지</a></div>
         <div class="unselected">주문결제 - 완료</div>
         <div class="unselected">주문내역 보기</div>
     </div>
     
-   <form action="/payAddress" method="get">
+
         <div class="payAddressContainer" style="display: flex; flex-direction: column; align-items: center; margin-top: 5%; ">
             <div style="display: flex; flex-direction: column;">
-                <div style="font-size: 40px; font-weight: bold;">배송주소</div>
-                    <div style="margin-top:40px">
-                        <span id="name" style="font-size: 30px;" >이희주</span>
-                        <span id="number" style="font-size: 30px; margin-left: 20px;">010-9120-4599</span>
+                <div style="font-size: 50px; font-weight: bold;">배송주소</div>
+                    <div style="margin-top:45px">
+                        <span id="name" style="font-size: 45px;" >이희주</span>
+                        <span id="number" style="font-size: 45px; margin-left: 20px;">010-9120-4599</span>
                     </div>
-                <div id="address" style="font-size: 30px; margin-top:20px">인천광역시 연수구 아카데미로 119 인천대학교</div>
+                <div id="address" style="font-size: 45px; margin-top:20px">인천광역시 연수구 아카데미로 119 인천대학교</div>
             </div>
         
-            <div class="d-grid d-md-block" style="margin-top:90px;">
-                <button type="button" class="btn btn-dark" style="font-size: 20px; margin-right: 50px;" > 배송지 변경</button>
-                <button type="submit" class="btn btn-dark" style="font-size: 20px;" onclick="location.href='payDone.html'"> 구매하기</button> 
-        </div>
-    </form> 
+            <div  style="display: flex; justify-content: center; margin-top:90px;">
+                <button type="button" class="btn btn-outline-dark" style="font-size: 30px; margin-right: 50px;" > 배송지 변경</button>
+                <form action="payDone.html" method="get">
+                    <button type="submit" class="btn btn-outline-dark" style="font-size: 30px;"> 구매하기</button> 
+                </form> 
+             </div>
+
+
 
    
     

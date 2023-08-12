@@ -19,22 +19,22 @@
         <div class="unselected">주문내역 보기</div>
     </div>
  
-    <form class="cartForm" action="/cart" method="get">
+    <form class="cartForm" action="payAddress.html" method="get">
         <!-- 장바구니에 물건이 있는 경우 -->
-        <li class="productWrapper">
+        <li class="productWrapper" style=" list-style-type: none;">
                 <ul class="product">
-                    <img src="../logo.png" alt="상품 이미지" style="border: 1px solid black;">
-                    <span style="margin: 1cm; font-size: larger; font-weight: bold;">
+                    <img id="productImg"src="../logo.png" alt="상품 이미지" style="border: 1px solid black;">
+                    <span style="margin: 1cm; font-size: 40px; font-weight: bold;">
                         <p id="productName">상품명~~~~~~~~~~~~~~~~~~~~~~</p>
-                        <p style="float: left;">20000원</p>
+                        <p id="productPrice"style="float: left;">20000원</p>
                     </span>
-                    <p style="font-size: 40px; margin: 1cm;" id="">1개</p>
-                    <i class="bi bi-x-lg" id="deleteButton"style="font-size: 40px; margin: 1cm;"></i> 
+                    <p style="font-size: 50px; margin: 1cm;" id="productCount">1개</p>
+                    <i class="bi bi-x-lg" id="deleteButton"style="font-size: 40px; margin: 1cm; color:grey;"></i> 
                 </ul>
         </li>
 
         <div class="d-grid gap-2 col-4 mx-auto" >
-            <button type="submit" class="btn btn-dark" style="font-size: 20px; margin-top: 100px;" onclick="location.href='payAddress.html'"> 구매하기</button> 
+            <button type="submit"  class="btn btn-outline-dark" style="font-size: 30px; margin-top: 100px; " > 장바구니에 담긴 상품을 구매하기</button> 
         </div>    
     </form>
 
